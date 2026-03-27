@@ -148,7 +148,14 @@ img { max-width: 100%; height: auto; display: block; }
   cursor: pointer;
 }
 
-.project__name { font-size: 1.25rem; font-weight: 600; }
+.project__name {
+  font-size: 1.25rem; font-weight: 600;
+  display: inline-flex; align-items: center; gap: .6rem;
+}
+
+.project__logo {
+  height: 35px; width: auto; border-radius: 4px;
+}
 
 .project__badge {
   font-size: .75rem; font-weight: 600; text-transform: uppercase;
@@ -336,6 +343,16 @@ img { max-width: 100%; height: auto; display: block; }
 
 .timeline__company {
   font-size: .95rem; color: var(--color-primary); font-weight: 500;
+  display: inline-flex; align-items: center; gap: .5rem;
+}
+
+.timeline__logos {
+  display: inline-flex; align-items: center; gap: .4rem;
+}
+
+.timeline__logo {
+  height: 30px; width: auto; border-radius: 4px;
+  vertical-align: middle;
 }
 
 .timeline__period {
@@ -382,6 +399,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 .formation__item p {
   color: var(--color-text-muted); font-size: .9rem;
+  display: flex; align-items: center; gap: .4rem;
+}
+
+.formation__logo {
+  height: 20px; width: auto; border-radius: 3px;
 }
 
 /* ===== Skills ===== */
